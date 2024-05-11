@@ -146,6 +146,13 @@
       "i2p": null,
       "country": "US",
       "librey": true
+    },
+    {
+      "clearnet": "https://librey.nirn.quest/",
+      "tor": null,
+      "i2p": null,
+      "country": "US",
+      "librey": true
     }
   ]
 }
