@@ -8,6 +8,9 @@
                 foreach($cookies as $cookie) {
                     $parts = explode("=", $cookie);
                     $name = trim($parts[0]);
+
+                    $domain = parse_url($_SERVER['SERVER_NAME']);
+
                     setcookie($name, "", time() - 1000);
                 }
             }
@@ -16,7 +19,14 @@
         if (isset($_REQUEST["save"])) {
             foreach($_POST as $key=>$value) {
                 if (!empty($value)) {
-                    setcookie($key, $value, time() + (86400 * 90), '/');
+                    setcookie($key, $value, [
+                        "expires" => time() + (86400 * 90),
+                        "path" => "/",
+                        "domain" => "$domain",
+                        "secure" => true,       // Ensure cookies are only sent over HTTPS
+                        "httponly" => true,     // Prevent client-side JavaScript access to cookies
+                        "samesite" => "Strict"  // Strict SameSite policy for better protection against CSRF attacks
+                    ]);
                 } else {
                     setcookie($key, "", time() - 1000);
                 }
