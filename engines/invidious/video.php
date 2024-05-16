@@ -53,7 +53,7 @@
                 $thumbnail = preg_replace('/(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([^\s]+)/', 'https://i.ytimg.com/vi/$1/maxresdefault.jpg', $url) ?? '';
 
                 echo "<div class=\"text-result-wrapper\">";
-                echo "<a href=\"$url\">";
+                echo "<a rel=\"noreferer noopener\" href=\"$url\">";
                 echo "$base_url";
                 echo "<h2>$title</h2>";
                 echo "<img class=\"video-img\" src=\"image_proxy.php?url=$thumbnail\">";
