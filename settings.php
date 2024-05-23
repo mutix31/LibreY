@@ -38,9 +38,9 @@
             die();
         }
 
-        $opts = load_opts();
 
         require_once "misc/header.php";
+        $opts = load_opts();
 ?>
 
     <title>LibreY - <?php printtext("settings_title");?></title>
@@ -53,7 +53,9 @@
                 <label for="theme"><?php printtext("settings_theme");?>:</label>
                 <select name="theme">
                 <?php
-                    $themes = "<option value=\"amoled\">AMOLED</option>
+                    $default = $opts->default_theme ?? "dark";
+                    $themes = "
+                    <option value=\"dark\">Dark</option>
                     <option value=\"darker\">Darker</option>
                     <option value=\"amoled\">AMOLED</option>
                     <option value=\"light\">Light</option>
@@ -73,11 +75,12 @@
                     <option value=\"ubuntu\">Ubuntu</option>
                     <option value=\"tokyo_night\">Tokyo Night</option>";
 
-                    if (isset($opts->theme)) {
-                        $theme = $opts->theme;
-                        $themes = str_replace($theme . "\"", $theme . "\" selected", $themes);
+                    if (!isset($opts->theme)) {
+                        $theme = $default;
                     }
 
+                    $theme = $opts->theme;
+                    $themes = str_replace($theme . "\"", $theme . "\" selected", $themes);
                     echo $themes;
                 ?>
                 </select>
