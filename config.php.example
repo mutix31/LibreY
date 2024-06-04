@@ -23,10 +23,10 @@
         // how long in minutes to put google/other instances on cooldown if they aren't responding
         "request_cooldown" => 25,
 
-        // how long in minutes to store results for in the cache
+        // how long in minus to store results for in the cache
         "cache_time" => 20,
 
-        // Disable requests to /api.php - HIGHLY recommended to keep this at false, this is what allows LibreY to still show results when Google/DuckDuckGo blocks te requests.
+        // Disable requests to /api.php - HIGHLY recommended to keep this at false, this is what allows LibreY to still show results when Google/DuckDuckGo blocks the requests.
         "disable_api" => false,
 
         // whether to show where the result is from on the results page
