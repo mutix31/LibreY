@@ -50,6 +50,13 @@
       "librey": true
     },
     {
+      "clearnet": "https://librey.4o1x5.dev",
+      "tor": null,
+      "i2p": null,
+      "country": "HU",
+      "librey": true
+    },
+    {
       "clearnet": "https://librey.franklyflawless.org/",
       "tor": null,
       "i2p": null,
@@ -82,13 +89,6 @@
       "tor": null,
       "i2p": null,
       "country": "KR",
-      "librey": true
-    },
-    {
-      "clearnet": "https://librex.retro-hax.net/",
-      "tor": null,
-      "i2p": null,
-      "country": "DE",
       "librey": true
     },
     {
