@@ -47,7 +47,7 @@
     </head>
     <body>
         <div class="misc-container">
-            <h1>Settings</h1>
+            <h1><?php printtext("settings_title");?></h1>
             <form method="post" enctype="multipart/form-data" autocomplete="off">
               <div>
                 <label for="theme"><?php printtext("settings_theme");?>:</label>
