@@ -157,10 +157,6 @@
                         ?>
                         </select>
                     </div>
-                    <div>
-                        <label><?php printtext("settings_number_of_results");?></label>
-                        <input type="number" name="number_of_results" value="<?php echo htmlspecialchars($opts->number_of_results ?? "10") ?>" >
-                    </div>
                 </div>
                 <div>
                     <label><?php printtext("settings_safe_search");?></label>
