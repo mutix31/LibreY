@@ -2,7 +2,9 @@
         require_once "misc/search_engine.php";
 
         // Reset all cookies when resetting, or before saving new cookies
-        if (isset($_REQUEST["reset"]) || isset($_REQUEST["save"])) {
+	if (isset($_REQUEST["reset"])) {
+        // if (isset($_REQUEST["reset"]) || isset($_REQUEST["save"])) {
+	// Removing isset($_REQUEST["save"])) fixes the problem that settings don't "stick" if you go back into settins page to make additional settins changes.
             if (isset($_SERVER["HTTP_COOKIE"])) {
                 $cookies = explode(";", $_SERVER["HTTP_COOKIE"]);
                 foreach($cookies as $cookie) {
@@ -20,7 +22,7 @@
             foreach($_POST as $key=>$value) {
                 if (!empty($value)) {
                     setcookie($key, $value, [
-                        "expires" => time() + (86400 * 90),
+                        "expires" => time() + (86400 * 90), // Sets cookie to expire in 90 days
                         "path" => "/",
                         "domain" => "$domain",
                         "secure" => true,       // Ensure cookies are only sent over HTTPS
