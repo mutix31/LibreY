@@ -4,7 +4,7 @@
         // Reset all cookies when resetting, or before saving new cookies
 	if (isset($_REQUEST["reset"])) {
         // if (isset($_REQUEST["reset"]) || isset($_REQUEST["save"])) {
-	// Removing isset($_REQUEST["save"])) fixes the problem that settings don't "stick" if you go back into settins page to make additional settins changes.
+	// Removing isset($_REQUEST["save"])) fixes the problem that settings don't "stick" if you go back into settings page to make additional changes.
             if (isset($_SERVER["HTTP_COOKIE"])) {
                 $cookies = explode(";", $_SERVER["HTTP_COOKIE"]);
                 foreach($cookies as $cookie) {
