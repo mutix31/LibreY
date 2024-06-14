@@ -88,7 +88,7 @@
                 </select>
                 </div>
 		<div>
-                    <label><?php printtext("settings_special_warning");?></label>
+                    <label><?php printtext("settings_special_warning");?></label><br><br>
                     <label><?php printtext("settings_special_disabled");?></label>
                     <input type="checkbox" name="disable_special" <?php echo $opts->disable_special ? "checked"  : ""; ?> ><br>
                     <label><?php printtext("settings_frontends_disable");?></label>
