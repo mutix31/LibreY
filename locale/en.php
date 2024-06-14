@@ -24,6 +24,7 @@ return array(
 
     "settings_title" => "Settings",
     "settings_theme" => "Theme",
+    "settings_special_warning" => "Als u dit selectievakje inschakelt, blijft de instelling actief totdat u op de Reset knop klikt.",
     "settings_special_disabled" => "Disable special queries (e.g.: currency conversion)",
 
     "settings_frontends" => "Privacy friendly frontends",
