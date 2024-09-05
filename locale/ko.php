@@ -1,5 +1,7 @@
 <?php
 
+// github.com/NoaHimesaka1873
+
 return array(
     "page_title" => "LibreY 검색",
     "search_button" => "LibreY로 검색하기",
