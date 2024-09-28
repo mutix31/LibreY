@@ -146,6 +146,13 @@
       "i2p": null,
       "country": "US",
       "librey": true
+    },
+    {
+      "clearnet": "https://libre.blitzw.in/",
+      "tor": null,
+      "i2p": null,
+      "country": "DE",
+      "librey": true
     }
   ]
 }
