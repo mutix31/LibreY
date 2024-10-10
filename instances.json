@@ -153,6 +153,13 @@
       "i2p": null,
       "country": "DE",
       "librey": true
+    },
+    {
+      "clearnet": "https://search.technicalvoid.dev/",
+      "tor": "http://ezjfq3zz5mquiwdl4q7zg4v26u74e4sjsdyg3z67ozn3dxqslvb7pzyd.onion/",
+      "i2p": null,
+      "country": "RO",
+      "librey": true
     }
   ]
 }
