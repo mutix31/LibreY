@@ -160,6 +160,13 @@
       "i2p": null,
       "country": "RO",
       "librey": true
+    },
+    {
+      "clearnet": "https://serp.catswords.net/",
+      "tor": null,
+      "i2p": null,
+      "country": "KR",
+      "librey": true
     }
   ]
 }
