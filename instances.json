@@ -64,6 +64,13 @@
       "librey": true
     },
     {
+      "clearnet": "https://libre-find.online/",
+      "tor": null,
+      "i2p": null,
+      "country": "DE",
+      "librey": true
+    },
+    {
       "clearnet": "https://glass.prpl.wtf/",
       "tor": null,
       "i2p": null,
