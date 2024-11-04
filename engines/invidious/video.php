@@ -53,7 +53,7 @@
                 $views = $result["views"] ?? '';
                 $date = $result["date"] ?? '';
                 $lengthSeconds = $result["lengthSeconds"] ?? '';
-                $thumbnail = "https://i.ytimg.com/vi/" . htmlspecialchars(explode("=", $url)[1]) . "/maxresdefault.jpg" ?? '';
+                $thumbnail = "https://i.ytimg.com/vi/" . htmlspecialchars(explode("=", $url)[1]) . "/mqdefault.jpg" ?? '';
 
                 echo "<div class=\"text-result-wrapper\">";
                 echo "<a rel=\"noreferer noopener\" href=\"$url\">";
