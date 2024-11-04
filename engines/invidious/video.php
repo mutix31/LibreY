@@ -16,8 +16,9 @@
                     $title = $response["title"];
                     $url = "https://youtube.com/watch?v=" . $response["videoId"];
                     $uploader = $response["author"];
-                    $views = $response["viewCount"];
+                    $views = $response["viewCountText"];
                     $date = $response["publishedText"];
+                    $lengthSeconds = $response["lengthSeconds"];
                     $thumbnail = $this->instance_url . "/vi/" . explode("/vi/" ,$response["videoThumbnails"][4]["url"])[1];
 
                     array_push($results,
@@ -29,6 +30,7 @@
                             "uploader" => htmlspecialchars($uploader),
                             "views" => htmlspecialchars($views),
                             "date" => htmlspecialchars($date),
+                            "lengthSeconds" => htmlspecialchars($lengthSeconds),
                             "thumbnail" => htmlspecialchars($thumbnail)
                         )
                     );
@@ -50,6 +52,7 @@
                 $uploader = $result["uploader"] ?? '';
                 $views = $result["views"] ?? '';
                 $date = $result["date"] ?? '';
+                $lengthSeconds = $result["lengthSeconds"] ?? '';
                 $thumbnail = "https://i.ytimg.com/vi/" . htmlspecialchars(explode("=", $url)[1]) . "/maxresdefault.jpg" ?? '';
 
                 echo "<div class=\"text-result-wrapper\">";
@@ -59,6 +62,8 @@
                 echo "<img class=\"video-img\" src=\"image_proxy.php?url=$thumbnail\">";
                 echo "<br>";
                 echo "<span>$uploader - $date - $views views</span>";
+                echo "<br>";
+                echo "<span>$lengthSeconds seconds</span>";
                 echo "</a>";
                 echo "</div>";
             }
