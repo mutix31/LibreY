@@ -1,4 +1,5 @@
 <?php
+    require_once "misc/tools.php";
     class VideoSearch extends EngineRequest {
         protected $instance_url;
         public function get_request_url() {
@@ -53,6 +54,7 @@
                 $views = $result["views"] ?? '';
                 $date = $result["date"] ?? '';
                 $lengthSeconds = $result["lengthSeconds"] ?? '';
+                $length = seconds_to_human_readable($lengthSeconds) ?? '';
                 $thumbnail = "https://i.ytimg.com/vi/" . htmlspecialchars(explode("=", $url)[1]) . "/mqdefault.jpg" ?? '';
 
                 echo "<div class=\"text-result-wrapper\">";
@@ -63,7 +65,7 @@
                 echo "<br>";
                 echo "<span>$uploader - $date - $views views</span>";
                 echo "<br>";
-                echo "<span>$lengthSeconds seconds</span>";
+                echo "<span>$length</span>";
                 echo "</a>";
                 echo "</div>";
             }
