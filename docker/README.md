@@ -43,7 +43,7 @@ services:
       - CURLOPT_PROXY_ENABLED=false
       - CURLOPT_PROXY=192.0.2.53:8388
       - CURLOPT_PROXYTYPE=CURLPROXY_HTTP
-      - CURLOPT_USERAGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:116.0) Gecko/20100101 Firefox/116.0
+      - CURLOPT_USERAGENT=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
       - CURLOPT_FOLLOWLOCATION=true
     volumes:
       # - ./nginx_logs:/var/log/nginx # Disabled by default. These are the NGINX request logs.
@@ -141,7 +141,7 @@ This Docker image was developed with high configurability in mind, so here is th
 | CURLOPT_PROXYTYPE      | "CURLPROXY_HTTP"                                                                   | "CURLPROXY_SOCKS4A", "CURLPROXY_SOCKS5", "CURLPROXY_SOCKS5_HOSTNAME" | Set the type of proxy connection (if you enabled it).                                                 |
 | CURLOPT_RETURNTRANSFER | true                                                                               | boolean                                                              | Return the transfer as a string of the return value of curl_exec() instead of outputting it directly. |
 | CURLOPT_ENCODING       | ""                                                                                 | string                                                               | Return the transfer as a string of the return value of curl_exec() instead of outputting it directly. |
-| CURLOPT_USERAGENT      | "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:116.0) Gecko/20100101 Firefox/116.0" | string                                                               | This variable defines the 'User-Agent' that curl will use to attempt to avoid being blocked.          |
+| CURLOPT_USERAGENT      | "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0" | string                                                               | This variable defines the 'User-Agent' that curl will use to attempt to avoid being blocked.          |
 | CURLOPT_IPRESOLVE      | "CURL_IPRESOLVE_WHATEVER"                                                          | "CURL_IPRESOLVE_V4", "CURL_IPRESOLVE_V6"                             | Use a fixed IP version for making requests, or what DNS prefers.                                      |
 | CURLOPT_CUSTOMREQUEST  | "GET"                                                                              | "POST", "CONNECT"                                                    | Defines the HTTP method that curl will use to make the request.                                       |
 | CURLOPT_MAXREDIRS      | 5                                                                                  | integer                                                              | The maximum amount of HTTP redirections to follow, only enabled with CURLOPT_FOLLOWLOCATION.          |
