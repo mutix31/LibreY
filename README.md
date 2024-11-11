@@ -2,7 +2,7 @@
 
 [![Docker Image CI](https://github.com/Ahwxorg/LibreY/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Ahwxorg/LibreY/actions/workflows/docker-image.yml)
 
-> LibreY is a fork of LibreX, a framework-less and javascript-free privacy respecting meta search engine, made by [hnhx](https://github.com/hnhx). LibreY changed some features like automatic redirection. The original code is written by [hnhx and contributors](https://github.com/hnhx/LibreX/contributors)
+> LibreY is a fork of LibreX, a framework-less and javascript-free privacy respecting meta search engine, made by [hnhx](https://github.com/hnhx). LibreY changed some features like automatic redirection (now instance fallback), added scrapers for more search engines and various other changes visible in the [commit log](https://github.com/hnhx/librex/compare/main...Ahwxorg:LibreY:main). The original code is written by [hnhx and contributors](https://github.com/hnhx/LibreX/contributors)
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/49120638/215327189-76c54dec-8b19-4faf-8c39-29a61aa3b143.png" width="400">
