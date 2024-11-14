@@ -55,7 +55,7 @@ For our configuration, they would be changed to:
 
 6. Start LibreY! You can use a tool like [iftop](https://archlinux.org/packages/extra/x86_64/iftop/) to make sure your LibreY instance is connecting to guard nodes or a bridge instead of Google servers.
 
-## Updating
+To update Tor and LibreY:
 ```
 pacman -Syu
 git pull
