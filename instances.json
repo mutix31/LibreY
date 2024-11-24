@@ -72,7 +72,7 @@
     },
     {
       "clearnet": "https://libre-find.online/",
-      "tor": null,
+      "tor": "http://ug3lz3wdjxljv5fxyoicgcugmcsuym5e4zgxggotjdscdrdwid7s2mqd.onion/",
       "i2p": null,
       "country": "DE",
       "librey": true
