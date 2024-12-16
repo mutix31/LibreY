@@ -57,7 +57,7 @@
       "librey": true
     },
     {
-      "clearnet": "https://librey.retro-hax.net"
+      "clearnet": "https://librey.retro-hax.net",
       "tor": null,
       "i2p": null,
       "country": "DE",
