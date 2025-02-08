@@ -24,12 +24,7 @@ Alternatively look at `instances.json` where the list is generated from.<br><br>
 While the official instances may be more updated and have better uptime, please consider using another person's instances as these are heavily overloaded.<br>
 Support the community. ❤️<br><br>
 [@Ahwxorg](https://github.com/Ahwxorg)'s instance:<br>
-[search.ahwx.org](https://search.ahwx.org/instances.php)<br>
-[Tor](http://wn5jl6fxlzzfenlyu3lc4q7jpw2saplrywxvxtvqbguotwd4y5cjeuqd.onion/instances.php)<br>
-[search2.ahwx.org](https://search2.ahwx.org/instances.php)<br>
-[Tor](http://hyy7rcvknwb22v4nnoar635wntiwr4uwzhiuyimemyl4fz6k7tahj5id.onion/instances.php)<br>
-[search3.ahwx.org](https://search3.ahwx.org/instances.php)<br>
-[Tor](http://r7nesn6dnp2fssinw7n5uj4ob2na6g4jppakpjgioxb6v4ca4bbsqoyd.onion/instances.php)<br>
+[search.liv.town](https://search.liv.town/instances.php)<br>
 <br>
 [@codedipper](https://github.com/codedipper)'s instance:<br>
 [search.revvy.de](https://search.revvy.de/instances.php)<br>
