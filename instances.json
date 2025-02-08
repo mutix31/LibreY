@@ -8,17 +8,10 @@
       "librey": true
     },
     {
-      "clearnet": "https://search.ahwx.org/",
-      "tor": "http://wn5jl6fxlzzfenlyu3lc4q7jpw2saplrywxvxtvqbguotwd4y5cjeuqd.onion/",
+      "clearnet": "https://search.liv.town/",
+      "tor": null,
       "i2p": null,
       "country": "NL",
-      "librey": true
-    },
-    {
-      "clearnet": "https://search2.ahwx.org/",
-      "tor": "http://r7nesn6dnp2fssinw7n5uj4ob2na6g4jppakpjgioxb6v4ca4bbsqoyd.onion/",
-      "i2p": null,
-      "country": "DE",
       "librey": true
     },
     {
