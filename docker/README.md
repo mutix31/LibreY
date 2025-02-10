@@ -32,7 +32,7 @@ services:
       - CONFIG_GOOGLE_DOMAIN=com
       - CONFIG_LANGUAGE=en
       - CONFIG_NUMBER_OF_RESULTS=10
-      - CONFIG_INVIDIOUS_INSTANCE=https://yt.ahwx.org
+      - CONFIG_INVIDIOUS_INSTANCE=https://inv.nadeko.net
       - CONFIG_DISABLE_BITTORRENT_SEARCH=false
       - CONFIG_HIDDEN_SERVICE_SEARCH=false
       - CONFIG_INSTANCE_FALLBACK=true
@@ -47,7 +47,7 @@ services:
       - CURLOPT_FOLLOWLOCATION=true
     volumes:
       # - ./nginx_logs:/var/log/nginx # Disabled by default. These are the NGINX request logs.
-      - ./php_logs:/var/log/php83 # Enabled by default. These are the PHP error logs.
+      - ./php_logs:/var/log/php84 # Enabled by default. These are the PHP error logs.
     restart: unless-stopped
   watchtower: # Watchtower is not required but highly recommended, since Watchtower will re-pull and restart the LibreY container automatically whenever there's an update.
     image: containrrr/watchtower
