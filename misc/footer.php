@@ -1,6 +1,6 @@
 <div class="footer-container">
-    <a href="./">LibreY</a>
-    <a href="https://github.com/Ahwxorg/librey/" target="_blank"><?php printtext("source_code_link");?></a>
+    <a href="./">LibreY.ghos.tr</a>
+    <a href="https://github.com/mutix31/librey/" target="_blank"><?php printtext("source_code_link");?></a>
     <a href="./instances.php" target="_blank"><?php printtext("instances_link");?></a>
     <a href="./settings.php"><?php printtext("settings_link");?></a>
     <?php if(!$opts->disable_api) {
