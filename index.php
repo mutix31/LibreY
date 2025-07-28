@@ -4,7 +4,7 @@
     </head>
     <body>
         <form class="search-container" action="search.php" method="get" autocomplete="off">
-                <h1>Libre<span class="Y">Y</span></h1>
+                <h1>librey.<span class="Y">ghos.tr</span></h1>
                 <input type="text" name="q" autofocus/>
                 <input type="hidden" name="p" value="0"/>
                 <input type="hidden" name="t" value="0"/>
